@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Biodata</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  width: 70%;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('background1.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style>
+<header>
+  <h2>Biodata</h2>
+</header>
+
+<section>
+  <img src="dimas.JPG" style="width:200px;height:300px;">
+  
+  <article>
+    <p title="nama panggilan">Shinra</p>
+    <hr>
+    <p title="nama lengkap">Nama :Dimas Indra Pradana</p>
+    <p><abbr title="Nomor Induk Mahasiswa">NIM</abbr> :21520244014</p>
+    <p>Asal :Tegal, jawa tengah</p>
+    <p>Status : Mahasiswa</p>
+    <p>Email : indradimas2002@gamil.com</p>
+  </article>
+</section>
+
+<footer>
+  <p>Sosial Media</p>
+  <a href="https://www.instagram.com/indra10_7/">Instagram</a>
+</footer>
+
+</body>
+</html>
